@@ -4,6 +4,8 @@ import com.qiaoxg.api.IMyLog;
 import com.qiaoxg.callback.LogCallback;
 
 public class MyLogImpl implements IMyLog {
+	
+//	private MyLogImpl() {}
 
 	@Override
 	public void errorLog(String msg) {

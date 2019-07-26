@@ -11,10 +11,12 @@ public class MyInvocationHandler implements InvocationHandler {
 
 	public MyInvocationHandler(Object obj) {
 		this.originalObject = obj;
+
 	}
 
 	@Override
 	public Object invoke(Object arg0, Method arg1, Object[] arg2) throws Throwable {
+
 		before(arg1);
 		Object invoke = arg1.invoke(originalObject, arg2);
 		after(arg1);

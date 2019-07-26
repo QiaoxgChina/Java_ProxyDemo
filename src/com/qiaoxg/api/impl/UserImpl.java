@@ -12,4 +12,9 @@ public class UserImpl implements IUser {
 		callback.dispatch();
 	}
 
+	@Override
+	public void showAge(String age) {
+		System.out.println("My age is " + age);
+	}
+
 }
